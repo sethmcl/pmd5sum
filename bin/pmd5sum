@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cwd="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+base_dir=$cwd/..
+PYTHONDONTWRITEBYTECODE=1 exec python "$base_dir/pmd5sum/__init__.py" "$@"
